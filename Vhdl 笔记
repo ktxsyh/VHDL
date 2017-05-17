@@ -1,0 +1,12 @@
+use IEEE;use IEEE.std_logic_1164.all;
+entity cca is    prot    
+(  A :  IN    std_logic;  
+B :  OUT   std_logic);
+end cca;
+attention: IN  输入到实体           OUT  从实体输出           INOUT 双向数据传输           BUFFER  从实体输出（但可以反馈到实体内部）           ENTITY and2 IS        PORT (a,b : IN  STD_LOGIC;             Y :ＯＵＴ　ＳＴＤ＿ＬＯＧＩＣ)；END and2;
+ARCHITECTURE AR_AND2 OF AND2 IS BEGIN
+END AR_AND2;
+ARCHITECTURE AR_AND2 OF AND2 IS   BEGIN     Y<= A and B;END ARCHITECTURE AR_AND2;
+VHDL 主要有五种类型的并行描述语句：块描述语句（BLOCK）、进程语句（PROCESS）、信号赋值语句、子程序调用语句、元件例化语句。
+还有关键性文件：库、程序包、配置
+VHDL的基本设计单元：实体（Entity）、结构体（Architecture）、程序包（Packge）、库（Library）、配置（Configuration）
